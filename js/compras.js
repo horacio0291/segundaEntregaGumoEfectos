@@ -35,7 +35,7 @@ const imprimirCarrito = () => {
 imprimirCarrito();
 
 const eliminarProductoDelCarrito = (e) => {
-    const productoIdSelected = e.target.closest('.cartRow').getAttribute('data-id')
+    const productoIdSelected = e.target.closest('.remover').getAttribute('data-id')
     console.log(productoIdSelected);
     carrito = carrito.filter((producto) => producto.id != productoIdSelected)
     console.log(carrito);
